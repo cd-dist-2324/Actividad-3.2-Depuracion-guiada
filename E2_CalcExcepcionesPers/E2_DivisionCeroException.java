@@ -2,10 +2,7 @@
 package E2_CalcExcepcionesPers;
 
 
-/**
- *
- * @author nccasares
- */
+
 public class E2_DivisionCeroException extends ArithmeticException{
 
     public E2_DivisionCeroException() {

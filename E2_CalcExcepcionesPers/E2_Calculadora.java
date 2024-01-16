@@ -3,10 +3,7 @@ package E2_CalcExcepcionesPers;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-/**
- *
- * @author nccasares
- */
+
 public class E2_Calculadora {
 
     public static int suma(int num1, int num2) {
@@ -33,9 +30,9 @@ public class E2_Calculadora {
     }
 
     public static double potencia(int num1, int num2) {
-        int resultado = 0;
+        int resultado = 1;
         for (int i = 0; i < num2; i++) {
-            resultado = resultado + suma(num1, num1);
+            resultado = resultado * num1;
         }
         return resultado;
     }
