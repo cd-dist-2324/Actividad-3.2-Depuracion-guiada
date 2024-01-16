@@ -4,12 +4,12 @@ package E2_CalcExcepcionesPers;
 import java.util.InputMismatchException;
 
 
-public class E2_ArgumentoIncorrecto extends InputMismatchException{
+public class ArgumentoIncorrectoException extends InputMismatchException{
 
-    public E2_ArgumentoIncorrecto() {
+    public ArgumentoIncorrectoException() {
     }
 
-    public E2_ArgumentoIncorrecto(String s) {
+    public ArgumentoIncorrectoException(String s) {
         super(s);
         System.out.println("***SE HA INTRODUCIDO UN FORMATO DE DATO INCORRECTO");
     }

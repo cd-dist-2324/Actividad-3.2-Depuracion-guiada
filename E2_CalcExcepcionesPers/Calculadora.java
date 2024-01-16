@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 
-public class E2_Calculadora {
+public class Calculadora {
 
     public static int suma(int num1, int num2) {
         return num1 + num2;
@@ -24,7 +24,7 @@ public class E2_Calculadora {
 
     public static int division(int num1, int num2) {
         if (num2 == 0) {
-            throw new E2_DivisionCeroException("***NO SE PERMITEN LAS DIVISIONES POR 0");
+            throw new DivisionCeroException("***NO SE PERMITEN LAS DIVISIONES POR 0");
         }
         return num1 / num2;
     }
@@ -54,9 +54,9 @@ public class E2_Calculadora {
 
                     numValidos = true;
                 } catch (InputMismatchException e) {
-                    throw new E2_ArgumentoIncorrecto("***ERROR DE FORMATO");
+                    throw new ArgumentoIncorrectoException("***ERROR DE FORMATO");
                 }
-            } catch (E2_ArgumentoIncorrecto ex) {
+            } catch (ArgumentoIncorrectoException ex) {
                 numValidos = false;
                 System.out.println(ex.getMessage());
             }
@@ -80,7 +80,7 @@ public class E2_Calculadora {
             case "d":
                 try {
                     resultado = division(n1, n2);
-                } catch (E2_DivisionCeroException ex) {
+                } catch (DivisionCeroException ex) {
                     System.out.println(ex.getMessage());
                     // ex.printStackTrace();
                 } catch (Exception ex) {

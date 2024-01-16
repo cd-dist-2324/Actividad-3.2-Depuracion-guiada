@@ -3,12 +3,12 @@ package E2_CalcExcepcionesPers;
 
 
 
-public class E2_DivisionCeroException extends ArithmeticException{
+public class DivisionCeroException extends ArithmeticException{
 
-    public E2_DivisionCeroException() {
+    public DivisionCeroException() {
     }
 
-    public E2_DivisionCeroException(String s) {
+    public DivisionCeroException(String s) {
         super(s);
         System.out.println("***SE HA PRODUCIDO UN ERROR AL INTENTAR DIVIDIR POR 0");
     }
