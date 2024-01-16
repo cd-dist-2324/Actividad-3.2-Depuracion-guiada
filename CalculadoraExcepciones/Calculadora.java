@@ -1,4 +1,4 @@
-package E2_CalcExcepcionesPers;
+package CalculadoraExcepciones;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -16,8 +16,8 @@ public class Calculadora {
 
     public static int multiplicacion(int num1, int num2) {
         int resultado = 0;
-        for (int i = 0; i < num2; i++) {
-            resultado = resultado + suma(num1, num1);
+        for (int i = 1; i < num2; i++) {
+            resultado = resultado + num1;
         }
         return resultado;
     }

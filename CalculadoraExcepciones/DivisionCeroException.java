@@ -1,5 +1,5 @@
 
-package E2_CalcExcepcionesPers;
+package CalculadoraExcepciones;
 
 
 
